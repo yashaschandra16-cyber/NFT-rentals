@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard - NFT Rentals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">NFT Rentals</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse NFTs</a></li>
+        <li><a href="list.html">List NFT</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard">
+    <h1>Welcome to Your Dashboard</h1>
+
+    <!-- My Rentals -->
+    <div class="dashboard-section">
+      <h2>My Rentals</h2>
+      <div class="nft-grid">
+        <div class="card">
+          <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/d4ca0930-b447-4a1a-9e56-30eb25a29611.png" />
+          <h3>Epic Gamer Skin</h3>
+          <p>0.05 ETH / day</p>
+          <button class="btn" onclick="returnNFT()">Return NFT</button>
+        </div>
+        <div class="card">
+          <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/3b697a01-7fbf-4265-9ed6-0020248172d3.png"  />
+          <h3>Concert Weekend Pass</h3>
+          <p>0.08 ETH / day</p>
+          <button class="btn" onclick="returnNFT()">Return NFT</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Listings -->
+    <div class="dashboard-section">
+      <h2>My Listings</h2>
+      <div class="nft-grid">
+        <div class="card">
+          <img src="assets/nft2.png" alt="NFT 3" />
+          <h3>Rare Digital Artwork</h3>
+          <p>0.1 ETH / day</p>
+          <button class="btn" onclick="editNFT()">Edit Listing</button>
+        </div>
+        <div class="card">
+          <img src="assets/nft4.png" alt="NFT 4" />
+          <h3>Limited Edition Skin</h3>
+          <p>0.07 ETH / day</p>
+          <button class="btn" onclick="editNFT()">Edit Listing</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 NFT Rentals | Built for Hackathon 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
